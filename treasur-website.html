@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Treasur - Wealth Management</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    :root {
+      --bg: #000;
+      --text: #fff;
+      --green: #00ff88;
+      --card-bg: #111;
+    }
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      scroll-behavior: smooth;
+    }
+    header {
+      text-align: center;
+      padding: 6rem 2rem;
+      background: linear-gradient(135deg, #000, #111);
+      animation: fadeIn 2s ease-in;
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin: 0;
+      color: var(--green);
+      text-shadow: 0 0 15px rgba(0,255,136,0.5);
+    }
+    header p {
+      font-size: 1.4rem;
+      margin-top: 1rem;
+      opacity: 0.9;
+    }
+    section {
+      padding: 4rem 10%;
+      animation: fadeUp 1.5s ease;
+    }
+    h2 {
+      color: var(--green);
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .card {
+      background: var(--card-bg);
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.7);
+      margin-bottom: 3rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeUp 1.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,255,136,0.4);
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    ul li {
+      margin-bottom: 0.6rem;
+    }
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+    .stat {
+      background: #0d0d0d;
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+      margin: 1rem;
+      flex: 1;
+      min-width: 200px;
+      animation: popIn 1s ease;
+    }
+    .stat i {
+      font-size: 2rem;
+      color: var(--green);
+      margin-bottom: 0.5rem;
+    }
+    .stat h3 {
+      color: var(--green);
+      font-size: 2rem;
+      margin: 0;
+    }
+    .infographic {
+      display: flex;
+      gap: 2rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+    .step {
+      flex: 1;
+      min-width: 220px;
+      background: #0d0d0d;
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .step:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,255,136,0.4);
+    }
+    .step i {
+      font-size: 2rem;
+      color: var(--green);
+      margin-bottom: 1rem;
+    }
+    .step h3 {
+      color: var(--green);
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    footer {
+      background: #0d0d0d;
+      color: var(--text);
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+      animation: fadeIn 2s ease-in;
+    }
+    footer a {
+      color: var(--green);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    @keyframes fadeUp {
+      from {opacity: 0; transform: translateY(40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes popIn {
+      0% {transform: scale(0.8); opacity: 0;}
+      100% {transform: scale(1); opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><i class="fa-solid fa-coins"></i> Treasur Wealth Management</h1>
+    <p>We Help Businesses Manage Idle Cash Efficiently</p>
+  </header>
+
+  <section>
+    <div class="card">
+      <h2><i class="fa-solid fa-users"></i> Who We Are</h2>
+      <p>We're a team of passionate financial experts with over <span style="color:var(--green);">50 years</span> of combined experience in fintech and wealth. Treasur was born when we needed to extend the runway for one of our companies — today we help businesses manage idle cash for working capital and growth.</p>
+    </div>
+
+    <div class="card">
+      <h2><i class="fa-solid fa-diagram-project"></i> Our Process</h2>
+      <div class="infographic">
+        <div class="step">
+          <i class="fa-solid fa-phone"></i>
+          <h3>1</h3>
+          <p>Understand your requirements via a quick call.</p>
+        </div>
+        <div class="step">
+          <i class="fa-solid fa-file-signature"></i>
+          <h3>2</h3>
+          <p>Sign contracts & open your Demat account.</p>
+        </div>
+        <div class="step">
+          <i class="fa-solid fa-chart-line"></i>
+          <h3>3</h3>
+          <p>We trade & manage investments on your behalf.</p>
+        </div>
+        <div class="step">
+          <i class="fa-solid fa-money-bill-trend-up"></i>
+          <h3>4</h3>
+          <p>Bi-weekly reports + profit distribution to your account.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><i class="fa-solid fa-shield-halved"></i> Risk Management</h2>
+      <p>We prioritize <span style="color:var(--green);">capital protection</span> and transparent investment strategies, steering clear of high-risk, short-term schemes.</p>
+    </div>
+
+    <div class="card">
+      <h2><i class="fa-solid fa-award"></i> Our Credentials</h2>
+      <div class="stats">
+        <div class="stat">
+          <i class="fa-solid fa-sack-dollar"></i>
+          <h3>₹35+ Cr</h3>
+          <p>Traded Daily</p>
+        </div>
+        <div class="stat">
+          <i class="fa-solid fa-handshake"></i>
+          <h3>16+</h3>
+          <p>Sub-Broker Clients</p>
+        </div>
+        <div class="stat">
+          <i class="fa-solid fa-percent"></i>
+          <h3>2-4%</h3>
+          <p>Avg Monthly Return</p>
+        </div>
+        <div class="stat">
+          <i class="fa-solid fa-id-badge"></i>
+          <h3>AP0387090793</h3>
+          <p>SEBI Reg. Code</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><i class="fa-solid fa-scale-balanced"></i> How We Charge</h2>
+      <ul>
+        <li><strong>Profit Sharing:</strong> 60/40 split (60% you, 40% us).</li>
+        <li><strong>Market Dependent:</strong> Returns vary by market.</li>
+        <li><strong>Net Returns:</strong> After brokerage, taxes & fees.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><i class="fa-solid fa-circle-question"></i> FAQs</h2>
+      <ul>
+        <li><strong>Minimum Capital:</strong> ₹1 Cr & above.</li>
+        <li><strong>Lock-ins:</strong> None, but 6-month horizon advised.</li>
+        <li><strong>Capital Increase:</strong> Open new Demat for efficiency.</li>
+        <li><strong>Other Assets:</strong> Primarily equities; open to opportunities.</li>
+        <li><strong>Returns:</strong> Consistent 2-3% per month.</li>
+        <li><strong>Business Use:</strong> Yes, designed for working capital.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>Contact:<br>
+      Yashvardhan Singh: <a href="tel:+919987704049">+91-9987704049</a> | 
+      Shubham Rawal: <a href="tel:+919654551886">+91-9654551886</a>
+    </p>
+    <p>&copy; 2025 Treasur Wealth Management</p>
+  </footer>
+
+</body>
+</html>
